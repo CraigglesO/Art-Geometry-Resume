@@ -597,18 +597,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-nine-circle', triggerHook: 'onEnter', offset: 221.5, duration: 150})
   .setTween(TweenMax.to('#electrician-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#electrician-emblem').css('opacity','1');
       $('#electrician-text').css({
-        transform: "translate(69.9888px, 245.061px)",
-        opacity: "1"});
+        transform: 'translate(69.9888px, 245.061px)',
+        opacity: '1'});
     }
     else {
       $('#electrician-emblem').css('opacity','0');
       $('#electrician-text').css({
-        transform: "translate(69.9888px, 350px)",
-        opacity: "0"});
+        transform: 'translate(69.9888px, 350px)',
+        opacity: '0'});
     }
 
   })
@@ -617,18 +617,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-nine-circle', triggerHook: 'onEnter', offset: 350, duration: 150})
   .setTween(TweenMax.to('#lifegaurd-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#lifegaurd-emblem').css('opacity','1');
       $('#lifegaurd-text').css({
-        transform: "translate(777.4434px, 237.999px)",
-        opacity: "1"});
+        transform: 'translate(777.4434px, 237.999px)',
+        opacity: '1'});
     }
     else {
       $('#lifegaurd-emblem').css('opacity','0');
       $('#lifegaurd-text').css({
-        transform: "translate(777.4434px, 350px)",
-        opacity: "0"});
+        transform: 'translate(777.4434px, 350px)',
+        opacity: '0'});
     }
 
   })
@@ -647,18 +647,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-thirteen-circle', triggerHook: 'onEnter', offset: 338.5, duration: 150})
   .setTween(TweenMax.to('#engineer-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#engineer-emblem').css('opacity','1');
       $('#engineer-text').css({
-        transform: "translate(69.106px, 460.7075px)",
-        opacity: "1"});
+        transform: 'translate(69.106px, 460.7075px)',
+        opacity: '1'});
     }
     else {
       $('#engineer-emblem').css('opacity','0');
       $('#engineer-text').css({
-        transform: "translate(69.106px, 575px)",
-        opacity: "0"});
+        transform: 'translate(69.106px, 575px)',
+        opacity: '0'});
     }
   })
   .addTo(controller);
@@ -667,18 +667,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-thirteen-circle', triggerHook: 'onEnter', offset: 350, duration: 150})
   .setTween(TweenMax.to('#tower-tech-outline', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#tower-tech-emblem').css('opacity','1');
       $('#tower-tech-text').css({
-        transform: "translate(727.4424px, 454.6069px)",
-        opacity: "1"});
+        transform: 'translate(727.4424px, 454.6069px)',
+        opacity: '1'});
     }
     else {
       $('#tower-tech-emblem').css('opacity','0');
       $('#tower-tech-text').css({
-        transform: "translate(727.4424px, 575px)",
-        opacity: "0"});
+        transform: 'translate(727.4424px, 575px)',
+        opacity: '0'});
     }
   })
   .addTo(controller);
@@ -699,18 +699,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-thirteen-circle', triggerHook: 'onEnter', offset: 570, duration: 150})
   .setTween(TweenMax.to('#tower-two-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#tower-tech-two-emblem').css('opacity','1');
       $('#tower-tech-two-text').css({
-        transform: "translate(686.8232px, 754.2241px)",
-        opacity: "1"});
+        transform: 'translate(686.8232px, 754.2241px)',
+        opacity: '1'});
     }
     else {
       $('#tower-tech-two-emblem').css('opacity','0');
       $('#tower-tech-two-text').css({
-        transform: "translate(686.8232px, 875px)",
-        opacity: "0"});
+        transform: 'translate(686.8232px, 875px)',
+        opacity: '0'});
     }
   })
   .addTo(controller);
@@ -719,18 +719,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-thirteen-circle', triggerHook: 'onEnter', offset: 646, duration: 150})
   .setTween(TweenMax.to('#ncees-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#ncees-emblem').css('opacity','1');
       $('#ncees-text').css({
-        transform: "translate(69.9927px, 769.8647px)",
-        opacity: "1"});
+        transform: 'translate(69.9927px, 769.8647px)',
+        opacity: '1'});
     }
     else {
       $('#ncees-emblem').css('opacity','0');
       $('#ncees-text').css({
-        transform: "translate(69.9927px, 890px)",
-        opacity: "0"});
+        transform: 'translate(69.9927px, 890px)',
+        opacity: '0'});
     }
   })
   .addTo(controller);
@@ -739,18 +739,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-thirteen-circle', triggerHook: 'onEnter', offset: 633, duration: 200})
   .setTween(TweenMax.to('#osha-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#osha-emblem').css('opacity','1');
       $('#osha-text').css({
-        transform: "translate(69.9927px, 1043.269px)",
-        opacity: "1"});
+        transform: 'translate(69.9927px, 1043.269px)',
+        opacity: '1'});
     }
     else {
       $('#osha-emblem').css('opacity','0');
       $('#osha-text').css({
-        transform: "translate(69.9927px, 1170px)",
-        opacity: "0"});
+        transform: 'translate(69.9927px, 1170px)',
+        opacity: '0'});
     }
   })
   .addTo(controller);
@@ -769,18 +769,18 @@ $(function(){
   var scene = new ScrollMagic.Scene({triggerElement: '#two-fifteen-circle', triggerHook: 'onEnter', offset: 426.5, duration: 200})
   .setTween(TweenMax.to('#fe-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
   .on('end', () => {
-    var scrollInfo = controller.info("scrollDirection");
-    if (scrollInfo == "FORWARD"){
+    var scrollInfo = controller.info('scrollDirection');
+    if (scrollInfo == 'FORWARD'){
       $('#fe-emblem').css('opacity','1');
       $('#fe-text').css({
-        transform: "translate(838.5469px, 1033.2036px)",
-        opacity: "1"});
+        transform: 'translate(838.5469px, 1033.2036px)',
+        opacity: '1'});
     }
     else {
       $('#fe-emblem').css('opacity','0');
       $('#fe-text').css({
-        transform: "translate(838.5469px, 1150px)",
-        opacity: "0"});
+        transform: 'translate(838.5469px, 1150px)',
+        opacity: '0'});
     }
   })
   .addTo(controller);
@@ -919,25 +919,25 @@ $(function(){
 
 
     //hexagon-art:
-    $("#hexagon").clone().prop({ id: "hexagon2", name: "hexagon2" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon3", name: "hexagon3" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon4", name: "hexagon4" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon5", name: "hexagon5" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon6", name: "hexagon6" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon7", name: "hexagon7" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon8", name: "hexagon8" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon9", name: "hexagon9" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon10", name: "hexagon10" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon11", name: "hexagon11" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon12", name: "hexagon12" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon13", name: "hexagon13" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon14", name: "hexagon14" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon15", name: "hexagon15" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon16", name: "hexagon16" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon17", name: "hexagon17" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon18", name: "hexagon18" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon19", name: "hexagon19" }).appendTo("#hex-artwork");
-    $("#hexagon").clone().prop({ id: "hexagon20", name: "hexagon20" }).appendTo("#hex-artwork");
+    $('#hexagon').clone().prop({ id: 'hexagon2', name: 'hexagon2' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon3', name: 'hexagon3' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon4', name: 'hexagon4' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon5', name: 'hexagon5' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon6', name: 'hexagon6' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon7', name: 'hexagon7' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon8', name: 'hexagon8' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon9', name: 'hexagon9' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon10', name: 'hexagon10' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon11', name: 'hexagon11' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon12', name: 'hexagon12' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon13', name: 'hexagon13' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon14', name: 'hexagon14' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon15', name: 'hexagon15' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon16', name: 'hexagon16' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon17', name: 'hexagon17' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon18', name: 'hexagon18' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon19', name: 'hexagon19' }).appendTo('#hex-artwork');
+    $('#hexagon').clone().prop({ id: 'hexagon20', name: 'hexagon20' }).appendTo('#hex-artwork');
 
 
     // stroke-width: 0.2;
@@ -951,11 +951,10 @@ var rotate_total = 0;
 
 setInterval(() => {
   rotate_total -= 120;
-  $("#hexagon").css({transform: "rotate(" + rotate_total + "deg)"});
+  $('#hexagon').css({transform: 'rotate(' + rotate_total + 'deg)'});
   for (var y = 2; y <= 20; y++){
-    console.log(rotate_total);
     setTimeout((y) => {
-      $("#hexagon" + y).css({transform: "rotate(" + rotate_total + "deg) scale(" + y + ")"});
+      $('#hexagon' + y).css({transform: 'rotate(' + rotate_total + 'deg) scale(' + y + ')'});
     }, y*30, y);
   }
 }, 2900);

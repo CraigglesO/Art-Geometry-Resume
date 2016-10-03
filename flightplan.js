@@ -1,8 +1,11 @@
+'use strict'
+///Users/connor/.ssh/id_rsa.pub
+
 var plan = require('flightplan');
 
 var appName = 'node-app';
 var username = 'deploy';
-var startFile = 'app';
+var startFile = 'dist';
 
 var tmpDir = appName+'-' + new Date().getTime();
 
@@ -11,6 +14,7 @@ plan.target('staging', [
   {
     host: '45.55.226.76',
     username: username,
+    password: 'Elizabeth1',
     agent: process.env.SSH_AUTH_SOCK
   }
 ]);
@@ -19,6 +23,7 @@ plan.target('production', [
   {
     host: '45.55.226.76',
     username: username,
+    password: 'Elizabeth1',
     agent: process.env.SSH_AUTH_SOCK
   },
 //add in another server if you have more than one
@@ -30,13 +35,22 @@ plan.target('production', [
 ]);
 
 // run commands on localhost
+plan.local((local) => {
+    local.log('Copy files to remote hosts');
+    var filesToCopy = local.exec('git ls-files', { silent: true });
+    // rsync files to all the destination's hosts
+    local.transfer(filesToCopy, '/tmp/' + tmpDir);
+});
+
+// run commands on remote hosts (destinations)
+// run commands on localhost
 plan.local(function(local) {
   // uncomment these if you need to run a build on your machine first
   // local.log('Run build');
-  // local.exec('gulp build');
+  local.exec('gulp build');
 
   local.log('Copy files to remote hosts');
-  var filesToCopy = local.exec('sudo git ls-files', {silent: true});
+  var filesToCopy = local.exec('git ls-files', {silent: true});
   // rsync files to all the destination's hosts
   local.transfer(filesToCopy, '/tmp/' + tmpDir);
 });
