@@ -23,25 +23,23 @@ function updateTime() {
   hour = now.getHours().toString();
   min = now.getMinutes().toString();
 
-if (hour.length == 1){
-  H1 = 0;
-  h2 = hour;
-}
-else {
-  H1 = hour.slice(0,1);
-  H2 = hour.slice(1);
-}
+  if (hour.length == 1){
+    H1 = 0;
+    H2 = hour;
+  }
+  else {
+    H1 = hour.slice(0,1);
+    H2 = hour.slice(1);
+  }
 
-if (min.length == 1){
-  M1 = 0;
-  M2 = min;
-}
-else {
-  M1 = min.slice(0,1);
-  M2 = min.slice(1);
-}
-
-
+  if (min.length == 1){
+    M1 = 0;
+    M2 = min;
+  }
+  else {
+    M1 = min.slice(0,1);
+    M2 = min.slice(1);
+  }
 
   //display H1,H2,M1,M2:
 
@@ -442,6 +440,106 @@ $(function(){
     strokeDashoffset: length
   });
 
+  path = document.querySelector('#two-sixteen-top');
+  length = path.getTotalLength();
+  $('#two-sixteen-top').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#two-sixteen-bottom');
+  length = path.getTotalLength();
+  $('#two-sixteen-bottom').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#two-sixteen-line');
+  length = path.getTotalLength();
+  $('#two-sixteen-line').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#abicus');
+  length = path.getTotalLength();
+  $('#abicus').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#hands-left');
+  length = path.getTotalLength();
+  $('#hands-left').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#hands-right');
+  length = path.getTotalLength();
+  $('#hands-right').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#Dufry');
+  length = path.getTotalLength();
+  $('#Dufry').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  // path = document.querySelector('#Swarovski');
+  // length = path.getTotalLength();
+  // $('#Swarovski').css({
+  //   strokeDasharray: length,
+  //   strokeDashoffset: length
+  // });
+
+  path = document.querySelector('#Lacoste');
+  length = path.getTotalLength();
+  $('#Lacoste').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#Lacoste-text');
+  length = path.getTotalLength();
+  $('#Lacoste-text').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#Cartier');
+  length = path.getTotalLength();
+  $('#Cartier').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#Hennessy');
+  length = path.getTotalLength();
+  $('#Hennessy').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#Pandora');
+  length = path.getTotalLength();
+  $('#Pandora').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+  path = document.querySelector('#Swarovski');
+  length = path.getTotalLength();
+  $('#Swarovski').css({
+    strokeDasharray: length,
+    strokeDashoffset: length
+  });
+
+
+
   //Scenes
   var scene = new ScrollMagic.Scene({triggerElement: 'body', triggerHook: 'onLeave', duration: height})
           .setTween(TweenMax.to('#progress-bar', 1,{
@@ -786,8 +884,92 @@ $(function(){
   .addTo(controller);
 
 
+  var scene = new ScrollMagic.Scene({triggerElement: '#two-sixteen-circle', triggerHook: 'onEnter', offset: 300, duration: 200})
+  .setTween(TweenMax.to('#two-sixteen-top', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#two-sixteen-circle', triggerHook: 'onEnter', offset: 300, duration: 200})
+  .setTween(TweenMax.to('#two-sixteen-bottom', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#two-sixteen-circle', triggerHook: 'onEnter', offset: 453, duration: 600})
+  .setTween(TweenMax.to('#two-sixteen-line', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#two-sixteen-circle', triggerHook: 'onEnter', offset: 630, duration: 300})
+  .setTween(TweenMax.to('#abicus', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#two-sixteen-circle', triggerHook: 'onEnter', offset: 630})
+  .setTween(TweenMax.to('#project-management-text', 1,{
+    transform: 'translate(146.6558px, 1516.9487px)',
+    opacity: '1',
+    ease: Power2.easeOut}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#two-sixteen-circle', triggerHook: 'onEnter', offset: 680})
+  .setTween(TweenMax.to('#PM-EHS-text', 1,{
+    transform: 'translate(69.9927px, 1576.5542px)',
+    opacity: '1',
+    ease: Power2.easeOut}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#two-sixteen-circle', triggerHook: 'onEnter', offset: 850})
+  .setTween(TweenMax.to('#PC-text', 1,{
+    transform: 'translate(69.9927px, 1825.4868px)',
+    opacity: '1',
+    ease: Power2.easeOut}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#resume-places', triggerHook: 'onEnter', offset: 300, duration: 300})
+  .setTween(TweenMax.to('#resume-places', 3,{
+    opacity: '1',
+    ease: Power1.easeOut}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#hands-right', triggerHook: 'onEnter', offset: 200, duration: 500})
+  .setTween(TweenMax.to('#hands-right', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#hands-left', triggerHook: 'onEnter', offset: 200, duration: 500})
+  .setTween(TweenMax.to('#hands-left', 2,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#clients-text', triggerHook: 'onEnter', offset: 200, duration: 150})
+  .setTween(TweenMax.to('#clients-text', 0.5,{
+    opacity: '1',
+    ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#Dufry', triggerHook: 'onEnter', offset: 150, duration: 1500})
+  .setTween(TweenMax.to('#Dufry', 0.5,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
 
 
+  var scene = new ScrollMagic.Scene({triggerElement: '#Cartier', triggerHook: 'onEnter', offset: 150, duration: 300})
+  .setTween(TweenMax.to('#Cartier', 0.5,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#Lacoste', triggerHook: 'onEnter', offset: 150, duration: 400})
+  .setTween(TweenMax.to('#Lacoste', 0.5,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#Lacoste-text', triggerHook: 'onEnter', offset: 150, duration: 1000})
+  .setTween(TweenMax.to('#Lacoste-text', 0.5,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#Hennessy', triggerHook: 'onEnter', offset: 150, duration: 1400})
+  .setTween(TweenMax.to('#Hennessy', 0.5,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#Pandora', triggerHook: 'onEnter', offset: 150, duration: 1300})
+  .setTween(TweenMax.to('#Pandora', 0.5,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: '#Swarovski', triggerHook: 'onEnter', offset: 150, duration: 900})
+  .setTween(TweenMax.to('#Swarovski', 0.5,{strokeDashoffset: 0, ease: Linear.easeNone}))
+  .addTo(controller);
 
 
 
