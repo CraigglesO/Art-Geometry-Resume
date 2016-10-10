@@ -4,7 +4,7 @@
 var plan = require('flightplan');
 
 var appName = 'node-app';
-var username = 'deploy';
+var username = 'root';
 var startFile = 'dist';
 
 var tmpDir = appName+'-' + new Date().getTime();
@@ -47,7 +47,6 @@ plan.local((local) => {
 plan.local(function(local) {
   // uncomment these if you need to run a build on your machine first
   // local.log('Run build');
-  local.exec('gulp build');
 
   local.log('Copy files to remote hosts');
   var filesToCopy = local.exec('git ls-files', {silent: true});
@@ -63,9 +62,15 @@ plan.remote(function(remote) {
 
   remote.log('Install dependencies');
   remote.sudo('npm --production --prefix ~/' + tmpDir + ' install ~/' + tmpDir, {user: username});
-
   remote.log('Reload application');
   remote.sudo('ln -snf ~/' + tmpDir + ' ~/'+appName, {user: username});
-  remote.exec('forever stop ~/'+appName+'/'+startFile, {failsafe: true});
-  remote.exec('forever start ~/'+appName+'/'+startFile);
+  // remote.exec('forever stop ~/'+appName+'/'+startFile, {failsafe: true});
+  // remote.sudo('cd ~/' + appName + ' && npm install')
+  remote.exec('cd ~/' + appName + ' && npm install gulp');
+  remote.exec('cd ~/' + appName + ' && npm install gulp-load-plugins');
+  remote.exec('cd ~/' + appName + ' && npm install browser-sync');
+  remote.exec('cd ~/' + appName + ' && npm install del');
+  remote.exec('cd ~/' + appName + ' && npm install wiredep');
+  // remote.exec('cd ~/' + appName + ' && gulp build');
+  remote.exec('cd ~/'+ appName + ' && gulp serve');
 });
